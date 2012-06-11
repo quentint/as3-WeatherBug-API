@@ -4,7 +4,7 @@ package net.tw.web.weatherBug.loaders {
 	import flash.events.SecurityErrorEvent;
 	import flash.net.URLLoader;
 	
-	import net.tw.web.weatherBug.loaders.vo.LocationType;
+	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.signals.LoadFailed;
 	import net.tw.web.weatherBug.vo.LatLng;
 	import net.tw.web.weatherBug.vo.UnitType;

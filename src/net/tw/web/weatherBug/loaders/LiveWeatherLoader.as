@@ -2,7 +2,7 @@ package net.tw.web.weatherBug.loaders {
 	import flash.events.Event;
 	
 	import net.tw.web.weatherBug.helpers.EndpointHelper;
-	import net.tw.web.weatherBug.loaders.vo.LocationType;
+	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.signals.LiveWeatherLoaded;
 	import net.tw.web.weatherBug.vo.LatLng;
 	import net.tw.web.weatherBug.vo.LiveWeather;

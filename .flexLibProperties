@@ -9,7 +9,7 @@
     <classEntry path="net.tw.web.weatherBug.loaders.WeatherBugLoader"/>
     <classEntry path="flexUnitTests.WeatherBugLoadLiveWeatherTest"/>
     <classEntry path="net.tw.web.weatherBug.loaders.LiveWeatherLoader"/>
-    <classEntry path="net.tw.web.weatherBug.loaders.vo.LocationType"/>
+    <classEntry path="net.tw.web.weatherBug.vo.LocationType"/>
     <classEntry path="flexUnitTests.utils.SuiteUtils"/>
     <classEntry path="flexUnitTests.WeatherBugLoadForecastTest"/>
     <classEntry path="net.tw.web.weatherBug.loaders.ForecastLoader"/>

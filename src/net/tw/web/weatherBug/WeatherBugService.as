@@ -7,7 +7,7 @@ package net.tw.web.weatherBug {
 	import net.tw.web.weatherBug.loaders.ForecastLoader;
 	import net.tw.web.weatherBug.loaders.LiveWeatherLoader;
 	import net.tw.web.weatherBug.loaders.LocationLoader;
-	import net.tw.web.weatherBug.loaders.vo.LocationType;
+	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.signals.ForecastLoaded;
 	import net.tw.web.weatherBug.signals.LiveWeatherLoaded;
 	import net.tw.web.weatherBug.signals.LoadFailed;
