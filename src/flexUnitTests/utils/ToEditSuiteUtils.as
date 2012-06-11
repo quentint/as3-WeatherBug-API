@@ -6,7 +6,7 @@ package flexUnitTests.utils {
 	import net.tw.web.weatherBug.signals.LocationsLoaded;
 	import net.tw.web.weatherBug.vo.WeatherBugServiceSettings;
 
-	public class SuiteUtils {
+	public class ToEditSuiteUtils {
 		
 		public static const ASYNC_TIMEOUT:uint=2500;
 		
