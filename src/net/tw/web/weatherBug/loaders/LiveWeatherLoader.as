@@ -2,10 +2,10 @@ package net.tw.web.weatherBug.loaders {
 	import flash.events.Event;
 	
 	import net.tw.web.weatherBug.helpers.EndpointHelper;
-	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.signals.LiveWeatherLoaded;
 	import net.tw.web.weatherBug.vo.LatLng;
 	import net.tw.web.weatherBug.vo.LiveWeather;
+	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.vo.UnitType;
 	import net.tw.web.weatherBug.vo.WeatherBugServiceSettings;
 
@@ -18,21 +18,9 @@ package net.tw.web.weatherBug.loaders {
 			_loader.load(EndpointHelper.getAPIRequest(settings, 'getLiveWeatherRSS.aspx', getLocationParameters(settings, locationType, location)));
 		}
 		
-		override protected function onComplete(e:Event):void {
-			super.onComplete(e);
-			
-			var res:String=_loader.data as String;
-			if (res=='Access Denied') {
-				failed.dispatch();
-				return;
-			}
-			
-			try {
-				var xml:XML=new XML(res);
-			} catch (er:Error) {
-				failed.dispatch();
-				return;
-			}
+		override protected function onComplete(e:Event):XML {
+			var xml:XML=super.onComplete(e);
+			if (!xml) return null;
 			
 			var liveWeather:LiveWeather=new LiveWeather();
 			
@@ -68,6 +56,8 @@ package net.tw.web.weatherBug.loaders {
 			liveWeather.temperatureRate=	xml..aws::['temp-rate'].text();
 			
 			loaded.dispatch(liveWeather);
+			
+			return xml;
 		}
 	}
 }

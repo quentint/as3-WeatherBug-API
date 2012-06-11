@@ -2,12 +2,12 @@ package net.tw.web.weatherBug.loaders {
 	import flash.events.Event;
 	
 	import net.tw.web.weatherBug.helpers.EndpointHelper;
-	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.signals.ForecastLoaded;
 	import net.tw.web.weatherBug.vo.Forecast;
 	import net.tw.web.weatherBug.vo.ForecastDay;
 	import net.tw.web.weatherBug.vo.LatLng;
 	import net.tw.web.weatherBug.vo.Location;
+	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.vo.WeatherBugServiceSettings;
 
 	public class ForecastLoader extends WeatherBugLoader {
@@ -19,21 +19,9 @@ package net.tw.web.weatherBug.loaders {
 			_loader.load(EndpointHelper.getAPIRequest(settings, 'getForecastRSS.aspx', getLocationParameters(settings, locationType, location)));
 		}
 		
-		override protected function onComplete(e:Event):void {
-			super.onComplete(e);
-			
-			var res:String=_loader.data as String;
-			if (res=='Access Denied') {
-				failed.dispatch();
-				return;
-			}
-			
-			try {
-				var xml:XML=new XML(res);
-			} catch (er:Error) {
-				failed.dispatch();
-				return;
-			}
+		override protected function onComplete(e:Event):XML {
+			var xml:XML=super.onComplete(e);
+			if (!xml) return null;
 			
 			var forecast:Forecast=new Forecast();
 			
@@ -61,6 +49,8 @@ package net.tw.web.weatherBug.loaders {
 			}
 			
 			loaded.dispatch(forecast);
+			
+			return xml;
 		}
 		
 		protected function handleTemperature(value:String):Number {

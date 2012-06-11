@@ -29,9 +29,23 @@ package net.tw.web.weatherBug.loaders {
 			_loader.removeEventListener(SecurityErrorEvent.SECURITY_ERROR, onError);
 		}
 		
-		protected function onComplete(e:Event):void {
-			// TODO: Handle Access denied error globally!
+		protected function onComplete(e:Event):XML {
 			removeListeners();
+			
+			var res:String=_loader.data as String;
+			if (res=='Access Denied') {
+				failed.dispatch();
+				return null;
+			}
+			
+			try {
+				var xml:XML=new XML(res);
+			} catch (er:Error) {
+				failed.dispatch();
+				return null;
+			}
+			
+			return xml;
 		}
 		
 		protected function onError(e:Event):void {

@@ -20,22 +20,10 @@ package net.tw.web.weatherBug.loaders {
 			_loader.load(EndpointHelper.getAPIRequest(settings, 'getLocationsXML.aspx', {SearchString:zipCodeOrLocationName}));
 		}
 		
-		override protected function onComplete(e:Event):void {
+		override protected function onComplete(e:Event):XML {
 			
-			super.onComplete(e);
-			
-			var res:String=_loader.data as String;
-			if (res=='Access Denied') {
-				failed.dispatch();
-				return;
-			}
-			
-			try {
-				var xml:XML=new XML(res);
-			} catch (er:Error) {
-				failed.dispatch();
-				return;
-			}
+			var xml:XML=super.onComplete(e);
+			if (!xml) return null;
 			
 			var ar:Array=[];
 			var curLocation:Location;
@@ -53,6 +41,8 @@ package net.tw.web.weatherBug.loaders {
 				ar.push(curLocation);
 			}
 			loaded.dispatch(ar);
+			
+			return xml;
 		}
 	}
 }
