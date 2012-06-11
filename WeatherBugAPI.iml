@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="WeatherBugAPI">
+    <configurations>
+      <configuration name="WeatherBugAPI" pure-as="true" output-type="Library" output-file="WeatherBugAPI.swc" output-folder="$MODULE_DIR$/out/production/WeatherBugAPI">
+        <dependencies target-player="10.0">
+          <entries>
+            <entry library-name="as3-signals" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="flexunit-4.1.0-8-flex_4.1.0.16076" library-level="application">
+              <dependency linkage="Test" />
+            </entry>
+            <entry library-name="hamcrest" library-level="application">
+              <dependency linkage="Test" />
+            </entry>
+          </entries>
+          <sdk name="flex4.6-air3.2" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="flex4.6-air3.2" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="as3-signals" level="application" />
+    <orderEntry type="library" name="flexunit-4.1.0-8-flex_4.1.0.16076" level="application" />
+    <orderEntry type="library" name="hamcrest" level="application" />
+  </component>
+</module>
+
