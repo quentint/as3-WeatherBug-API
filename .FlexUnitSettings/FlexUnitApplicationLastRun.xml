@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testrun name="" >
 <testsuite  name="Default Test Suite" project="WeatherBugAPI">
-<testsuite name="flexUnitTests:WeatherBugTestSuite" type="testsuiteclass"/>
+<testsuite name="flexUnitTests:WeatherBugLoadLiveWeatherTest" type="testcaseclass">
+<testcase name="testLoadLiveWeatherForGeolocation_values" classname="flexUnitTests:WeatherBugLoadLiveWeatherTest"/>
+</testsuite>
 </testsuite>
 <portNumber value="8765" />
 </testrun>
