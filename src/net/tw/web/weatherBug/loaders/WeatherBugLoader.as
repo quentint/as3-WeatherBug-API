@@ -61,7 +61,7 @@ package net.tw.web.weatherBug.loaders {
 			else if (locationType==LocationType.CITY_CODE) params.cityCode=location;
 			else if (locationType==LocationType.GEOLOCATION) {
 				params.lat=LatLng(location).lat;
-				params.lng=LatLng(location).lng;
+				params.long=LatLng(location).lng;
 			}
 			
 			return params;

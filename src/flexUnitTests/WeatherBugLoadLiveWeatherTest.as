@@ -52,9 +52,9 @@ package flexUnitTests
 		[Test(async)]
 		public function testLoadLiveWeatherForZipCode_values_are_correct():void {
 			var lwl:LiveWeatherLoader=service.loadLiveWeatherForZipCode('64732');
-			handleSignal(this, lwl.loaded, check_testLoadLiveWeatherForZipCode_values_are_correct, SuiteUtils.ASYNC_TIMEOUT);
+			handleSignal(this, lwl.loaded, check_testLoadLiveWeather_values_are_correct, SuiteUtils.ASYNC_TIMEOUT);
 		}
-		protected function check_testLoadLiveWeatherForZipCode_values_are_correct(e:SignalAsyncEvent, data:Object):void {
+		protected function check_testLoadLiveWeather_values_are_correct(e:SignalAsyncEvent, data:Object):void {
 			var liveWeather:LiveWeather=e.args[0];
 			
 			assertThat(liveWeather.unitType, equalTo(UnitType.US_CUSTOMARY));
@@ -81,7 +81,7 @@ package flexUnitTests
 			assertThat(liveWeather.temperatureRate, isNumber());
 		}
 		
-		[Test(async)]
+		/*[Test(async)]
 		public function testLoadLiveWeatherForZipCode_units_are_correct():void {
 			service.settings.unitType=UnitType.METRIC_SYSTEM;
 			var lwl:LiveWeatherLoader=service.loadLiveWeatherForZipCode('64732');
@@ -90,7 +90,7 @@ package flexUnitTests
 		protected function check_testLoadLiveWeatherForZipCode_units_are_correct(e:SignalAsyncEvent, data:Object):void {
 			var liveWeather:LiveWeather=e.args[0];
 			assertThat(liveWeather.unitType, equalTo(UnitType.METRIC_SYSTEM));
-		}
+		}*/
 		
 		
 		[Test(async)]
@@ -103,8 +103,15 @@ package flexUnitTests
 		[Test(async)]
 		public function testLoadLiveWeatherForGeolocation():void {
 			// Bordeaux, France
-			var lwl:LiveWeatherLoader=service.loadLiveWeatherForGeolocation(new LatLng(44.8377890, -0.5791800));
+			var lwl:LiveWeatherLoader=service.loadLiveWeatherForGeolocation(new LatLng(44.8536097, -0.5678739));
 			proceedOnSignal(this, lwl.loaded, SuiteUtils.ASYNC_TIMEOUT);
+		}
+		
+		[Test(async)]
+		public function testLoadLiveWeatherForGeolocation_values():void {
+			// Bordeaux, France
+			handleSignal(this, service.liveWeatherLoaded, check_testLoadLiveWeather_values_are_correct, SuiteUtils.ASYNC_TIMEOUT);
+			service.loadLiveWeatherForGeolocation(new LatLng(44.8536097, -0.5678739));
 		}
 	}
 }

@@ -9,12 +9,14 @@
 			   minWidth="955" minHeight="600" creationComplete="onCreationComplete()">
 	<fx:Script>
 		<![CDATA[
-			import flexUnitTests.WeatherBugTestSuite;
+			import flexUnitTests.WeatherBugLoadLiveWeatherTest;
+			import org.flexunit.runner.Request;
 			
 			public function currentRunTestSuite():Array
 			{
 				var testsToRun:Array = new Array();
-				testsToRun.push(flexUnitTests.WeatherBugTestSuite);
+				
+				testsToRun.push(Request.methods(flexUnitTests.WeatherBugLoadLiveWeatherTest,["testLoadLiveWeatherForGeolocation_values"]));
 				return testsToRun;
 			}
 			
