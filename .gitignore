@@ -168,7 +168,16 @@ pip-log.txt
 ## Flex
 #############
 
-.FlexUnitSettings/
+FlexUnit*
+.actionScriptProperties
+.flexLibProperties
+
+#############
+## IntelliJ IDEA
+#############
+
+.idea
+*.iml
 
 #############
 ## as3-WeatherBug-API: SuiteUtils with WeatherBug licence key

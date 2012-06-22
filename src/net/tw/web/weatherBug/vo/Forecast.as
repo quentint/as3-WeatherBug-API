@@ -6,8 +6,11 @@
 package net.tw.web.weatherBug.vo {
 	public class Forecast {
 
-		public var date:Date;
+		public var sourceLocationType:String;
+		public var sourceLocation:*;
+		
 		public var location:Location;
+		public var date:Date;
 		public var unitType:int;
 		public var forecastDays:Array;
 

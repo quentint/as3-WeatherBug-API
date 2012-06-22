@@ -4,12 +4,21 @@
  * Time: 17:09
  */
 package net.tw.web.weatherBug.vo {
+	import net.tw.web.weatherBug.helpers.ConditionCodeHelper;
+
 	public class LiveWeather {
+		
+		public var sourceLocationType:String;
+		public var sourceLocation:*;
 
 		public var date:Date;
 		public var unitType:int;
 
 		public var condition:String;
+		public var icon:String;
+		public function get conditionCode():int {
+			return ConditionCodeHelper.getCodeFromIcon(icon);
+		}
 
 		public var temperature:Number;
 		public var temperatureHigh:Number;
@@ -27,6 +36,8 @@ package net.tw.web.weatherBug.vo {
 		public var humidityRate:Number;
 
 		public var moonPhase:Number;
+		
+		public var location:Location;
 		
 	}
 }

@@ -14,8 +14,13 @@ package net.tw.web.weatherBug.loaders {
 		
 		public const loaded:ForecastLoaded=new ForecastLoaded();
 		
+		protected var _sourceLocationType:String;
+		protected var _sourceLocation:*;
+		
 		public function ForecastLoader(settings:WeatherBugServiceSettings, locationType:String, location:*) {
 			super();
+			_sourceLocationType=locationType;
+			_sourceLocation=location;
 			_loader.load(EndpointHelper.getAPIRequest(settings, 'getForecastRSS.aspx', getLocationParameters(settings, locationType, location)));
 		}
 		
@@ -25,13 +30,17 @@ package net.tw.web.weatherBug.loaders {
 			
 			var forecast:Forecast=new Forecast();
 			
+			forecast.sourceLocationType=_sourceLocationType;
+			forecast.sourceLocation=_sourceLocation;
+			
+			forecast.location=new Location();
+			forecast.location.cityName=xml..aws::city.text();
+			
 			forecast.unitType=getUnitTypeFromURL(xml..aws::WebURL.text());
 			
 			var sDate:String=xml..aws::forecasts.@date;
 			forecast.date=new Date(sDate.split(' ')[0]);
 			
-			forecast.location=new Location();
-			forecast.location.cityName=xml..aws::city.text();
 			
 			var curDay:ForecastDay;
 			for each (var forecastNode:XML in xml..aws::forecast) {
@@ -41,9 +50,11 @@ package net.tw.web.weatherBug.loaders {
 				curDay.high=				handleTemperature(forecastNode.aws::high.text());
 				curDay.low=					handleTemperature(forecastNode.aws::low.text());
 				curDay.image=				forecastNode.aws::image.text();
+				curDay.icon=				forecastNode.aws::image.@icon;
 				curDay.prediction=			forecastNode.aws::prediction.text();
 				curDay.shortPrediction=		forecastNode.aws::['short-prediction'].text();
 				curDay.title=				forecastNode.aws::title.text();
+				curDay.altTitle=			forecastNode.aws::title.@alttitle;
 				
 				forecast.forecastDays.push(curDay);
 			}
