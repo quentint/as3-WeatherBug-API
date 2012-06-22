@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
-    <classEntry path="flexUnitTests.WeatherBugSearchLocationsTest"/>
-    <classEntry path="flexUnitTests.WeatherBugTestSuite"/>
-    <classEntry path="net.tw.web.weatherBug.loaders.LocationLoader"/>
+    <classEntry path="net.tw.web.weatherBug.helpers.ConditionCodeHelper"/>
     <classEntry path="net.tw.web.weatherBug.helpers.EndpointHelper"/>
-    <classEntry path="net.tw.web.weatherBug.signals.LoadFailed"/>
-    <classEntry path="net.tw.web.weatherBug.loaders.WeatherBugLoader"/>
-    <classEntry path="flexUnitTests.WeatherBugLoadLiveWeatherTest"/>
-    <classEntry path="net.tw.web.weatherBug.loaders.LiveWeatherLoader"/>
-    <classEntry path="net.tw.web.weatherBug.vo.LocationType"/>
-    <classEntry path="flexUnitTests.utils.SuiteUtils"/>
-    <classEntry path="flexUnitTests.WeatherBugLoadForecastTest"/>
+    <classEntry path="net.tw.web.weatherBug.helpers.LocationHelper"/>
     <classEntry path="net.tw.web.weatherBug.loaders.ForecastLoader"/>
+    <classEntry path="net.tw.web.weatherBug.loaders.LiveWeatherLoader"/>
+    <classEntry path="net.tw.web.weatherBug.loaders.LocationLoader"/>
+    <classEntry path="net.tw.web.weatherBug.loaders.WeatherBugLoader"/>
+    <classEntry path="net.tw.web.weatherBug.signals.ForecastLoadFailed"/>
+    <classEntry path="net.tw.web.weatherBug.signals.LiveWeatherLoadFailed"/>
+    <classEntry path="net.tw.web.weatherBug.signals.LoadFailed"/>
+    <classEntry path="net.tw.web.weatherBug.signals.LocationsLoadFailed"/>
+    <classEntry path="net.tw.web.weatherBug.vo.LocationType"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

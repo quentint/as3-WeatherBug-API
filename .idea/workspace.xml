@@ -61,61 +61,43 @@
       <file leaf-file-name="WeatherBugService.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/WeatherBugService.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="686" selection-end="686" vertical-scroll-proportion="0.47102803">
+            <state line="162" column="65" selection-start="5774" selection-end="5774" vertical-scroll-proportion="0.7185185">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForecastLoaded.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/signals/ForecastLoaded.as">
+      <file leaf-file-name="ConditionCodeHelper.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/helpers/ConditionCodeHelper.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Forecast.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/Forecast.as">
+      <file leaf-file-name="ForecastLoader.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/loaders/ForecastLoader.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="1" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+            <state line="31" column="12" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForecastDay.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/ForecastDay.as">
+      <file leaf-file-name="LiveWeatherLoader.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/loaders/LiveWeatherLoader.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+            <state line="44" column="12" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationsLoaded.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/signals/LocationsLoaded.as">
+      <file leaf-file-name="LocationHelper.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/helpers/LocationHelper.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LatLng.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/LatLng.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="23" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Location.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/Location.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+            <state line="10" column="22" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,15 +113,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/UnitType.as" />
-        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/WeatherBugServiceSettings.as" />
-        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/CityType.as" />
-        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/Location.as" />
         <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/LatLng.as" />
         <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/signals/LocationsLoaded.as" />
         <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/signals/LiveWeatherLoaded.as" />
         <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/LiveWeather.as" />
-        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/WeatherBugService.as" />
         <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/signals/ForecastLoaded.as" />
         <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/ForecastDay.as" />
         <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/Forecast.as" />
@@ -147,12 +124,17 @@
         <option value="$PROJECT_DIR$/test/suites/WeatherBugServiceTestSuite.as" />
         <option value="$PROJECT_DIR$/test/net/tw/web/weatherBug/WeatherBugServiceTest.as" />
         <option value="$PROJECT_DIR$/test/WeatherBugServiceTest.as" />
+        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/helpers/ConditionCodeHelper.as" />
+        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/loaders/LiveWeatherLoader.as" />
+        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/helpers/LocationHelper.as" />
+        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/loaders/ForecastLoader.as" />
+        <option value="$PROJECT_DIR$/src/net/tw/web/weatherBug/WeatherBugService.as" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
-    <option name="y" value="21" />
+    <option name="x" value="24" />
+    <option name="y" value="18" />
     <option name="width" value="1598" />
     <option name="height" value="993" />
   </component>
@@ -201,6 +183,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeatherBugAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WeatherBugAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -211,7 +207,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,7 +271,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="flexUnitTests" />
+              <option name="myItemId" value="weatherBug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,8 +296,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -313,22 +312,7 @@
       <recent name="C:\Users\Quentin\Desktop\Dropbox\dev\_flex\WeatherBugAPI\src\net\tw\web\weatherBug\vo" />
     </key>
   </component>
-  <component name="RunManager" selected="FlexUnit.WeatherBugServiceTest">
-    <configuration default="false" name="WeatherBugServiceTest" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" temporary="true" class_name="WeatherBugServiceTest" method_name="" output_log_level="" package_name="" scope="Class">
-      <option name="BCName" value="WeatherBugAPI" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="WeatherBugAPI" />
-      <option name="trusted" value="true" />
-      <RunnerSettings RunnerId="FlexDebugRunner" />
-      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -388,25 +372,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="false" name="EntireTestSuite" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" class_name="suites.EntireTestSuite" method_name="" output_log_level="All" package_name="" scope="Class">
-      <option name="BCName" value="WeatherBugAPI" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="WeatherBugAPI" />
-      <option name="trusted" value="true" />
-      <RunnerSettings RunnerId="FlexDebugRunner" />
-      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
-      <method />
-    </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="FlexUnit.EntireTestSuite" />
-      <item index="1" class="java.lang.String" itemvalue="FlexUnit.WeatherBugServiceTest" />
-    </list>
+    <list size="0" />
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -428,28 +394,51 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value="ALPHA_COMPARATOR" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="21" width="1598" height="993" extended-state="1" />
+    <frame x="24" y="18" width="1598" height="993" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934132" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24951892" sideWeight="0.6706587" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23567708" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18945312" sideWeight="0.4538922" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18945312" sideWeight="0.53772455" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934132" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -507,93 +496,85 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/UnitType.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/WeatherBugServiceSettings.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="1" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/CityType.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="47" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="47" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/LiveWeather.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="0" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/signals/LiveWeatherLoaded.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="31" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/signals/ForecastLoaded.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/ForecastDay.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/Location.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/LatLng.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/signals/LocationsLoaded.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="24" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/Forecast.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+        <state line="17" column="1" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/ForecastDay.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="8" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/signals/LocationsLoaded.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/LatLng.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/vo/Location.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="14" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/helpers/ConditionCodeHelper.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/loaders/LiveWeatherLoader.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="12" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/flexUnitTests/WeatherBugServiceTest.as">
+    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/helpers/LocationHelper.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="1" selection-start="715" selection-end="715" vertical-scroll-proportion="0.717757">
+        <state line="10" column="22" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/loaders/ForecastLoader.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="12" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/tw/web/weatherBug/WeatherBugService.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="686" selection-end="686" vertical-scroll-proportion="0.47102803">
+        <state line="162" column="65" selection-start="5774" selection-end="5774" vertical-scroll-proportion="0.7185185">
           <folding />
         </state>
       </provider>
