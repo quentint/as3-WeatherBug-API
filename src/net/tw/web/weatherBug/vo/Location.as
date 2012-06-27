@@ -5,6 +5,11 @@
  */
 package net.tw.web.weatherBug.vo {
 	public class Location {
+		
+		public function Location($zipCode:String=null, $cityCode:String=null) {
+			zipCode=$zipCode;
+			cityCode=$cityCode;
+		}
 
 		public var cityName:String;
 		public var stateName:String;
@@ -12,6 +17,10 @@ package net.tw.web.weatherBug.vo {
 		public var zipCode:String;
 		public var cityCode:String;
 		public var cityType:int;
+		
+		public function toString():String {
+			return '[Location zipCode='+zipCode+' cityCode='+cityCode+' cityName='+cityName+' countryName='+countryName+']';
+		}
 
 	}
 }

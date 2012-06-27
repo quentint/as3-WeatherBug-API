@@ -12,7 +12,7 @@ package net.tw.web.weatherBug.helpers {
 		 * 
 		 */
 		public static function locationMatchesSource(location:*, sourceLocationType:String, sourceLocation:*):Boolean {
-			if (sourceLocationType==LocationType.GEOLOCATION) {
+			if (sourceLocationType==LocationType.LAT_LNG) {
 				if (!(location is LatLng)) return false;
 				if (!(sourceLocation is LatLng)) return false;
 				var ll:LatLng=location as LatLng;
@@ -25,8 +25,10 @@ package net.tw.web.weatherBug.helpers {
 			if (!(location is Location)) return false;
 			var l:Location=location as Location;
 			
-			if (sourceLocationType==LocationType.CITY_CODE) return l.cityCode==sourceLocation;
-			if (sourceLocationType==LocationType.ZIP_CODE) return l.zipCode==sourceLocation;
+			if (sourceLocationType==LocationType.LOCATION) {
+				var sl:Location=sourceLocation as Location;
+				return l.cityCode==sl.cityCode || l.zipCode==sl.zipCode;
+			}
 			
 			return false;
 		}

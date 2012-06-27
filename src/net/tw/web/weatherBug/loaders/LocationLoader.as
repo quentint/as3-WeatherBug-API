@@ -1,12 +1,7 @@
 package net.tw.web.weatherBug.loaders {
 	import flash.events.Event;
-	import flash.events.IOErrorEvent;
-	import flash.events.SecurityErrorEvent;
-	import flash.net.URLLoader;
-	import flash.net.URLRequest;
 	
 	import net.tw.web.weatherBug.helpers.EndpointHelper;
-	import net.tw.web.weatherBug.signals.LoadFailed;
 	import net.tw.web.weatherBug.signals.LocationsLoaded;
 	import net.tw.web.weatherBug.vo.Location;
 	import net.tw.web.weatherBug.vo.WeatherBugServiceSettings;

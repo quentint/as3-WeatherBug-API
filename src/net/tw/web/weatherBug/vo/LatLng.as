@@ -13,5 +13,9 @@ package net.tw.web.weatherBug.vo {
 			lat = $lat;
 			lng = $lng;
 		}
+		
+		public function toString():String {
+			return '[LatLng lat='+lat+' lng='+lng+']';
+		}
 	}
 }

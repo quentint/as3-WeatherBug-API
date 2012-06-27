@@ -3,11 +3,8 @@ package net.tw.web.weatherBug.loaders {
 	
 	import net.tw.web.weatherBug.helpers.EndpointHelper;
 	import net.tw.web.weatherBug.signals.LiveWeatherLoaded;
-	import net.tw.web.weatherBug.vo.LatLng;
 	import net.tw.web.weatherBug.vo.LiveWeather;
 	import net.tw.web.weatherBug.vo.Location;
-	import net.tw.web.weatherBug.vo.LocationType;
-	import net.tw.web.weatherBug.vo.UnitType;
 	import net.tw.web.weatherBug.vo.WeatherBugServiceSettings;
 
 	public class LiveWeatherLoader extends WeatherBugLoader {

@@ -4,9 +4,10 @@ package net.tw.web.weatherBug.loaders {
 	import flash.events.SecurityErrorEvent;
 	import flash.net.URLLoader;
 	
-	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.signals.LoadFailed;
 	import net.tw.web.weatherBug.vo.LatLng;
+	import net.tw.web.weatherBug.vo.Location;
+	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.vo.UnitType;
 	import net.tw.web.weatherBug.vo.WeatherBugServiceSettings;
 
@@ -57,9 +58,14 @@ package net.tw.web.weatherBug.loaders {
 		protected function getLocationParameters(settings:WeatherBugServiceSettings, locationType:String, location:*):Object {
 			var params:Object={UnitType:settings.unitType, OutputType:1};
 			
-			if (locationType==LocationType.ZIP_CODE) params.zipCode=location;
-			else if (locationType==LocationType.CITY_CODE) params.cityCode=location;
-			else if (locationType==LocationType.GEOLOCATION) {
+			if (locationType==LocationType.LOCATION) {
+				var l:Location=location as Location;
+				if (l.zipCode) {
+					params.zipCode=l.zipCode;
+				} else if (l.cityCode) {
+					params.cityCode=l.cityCode;
+				}
+			} else if (locationType==LocationType.LAT_LNG) {
 				params.lat=LatLng(location).lat;
 				params.long=LatLng(location).lng;
 			}

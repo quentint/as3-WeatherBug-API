@@ -13,7 +13,6 @@ package net.tw.web.weatherBug {
 	import net.tw.web.weatherBug.signals.LiveWeatherLoaded;
 	import net.tw.web.weatherBug.signals.LocationsLoadFailed;
 	import net.tw.web.weatherBug.signals.LocationsLoaded;
-	import net.tw.web.weatherBug.vo.CityType;
 	import net.tw.web.weatherBug.vo.Forecast;
 	import net.tw.web.weatherBug.vo.LatLng;
 	import net.tw.web.weatherBug.vo.LiveWeather;
@@ -104,26 +103,19 @@ package net.tw.web.weatherBug {
 			cleanLiveWeatherLoader();
 			liveWeatherLoaded.dispatch(liveWeather);
 		}
-		public function loadLiveWeatherForZipCode(zipCode:String):LiveWeatherLoader {
-			return _loadLiveWeather(LocationType.ZIP_CODE, zipCode);
-		}
-		public function loadLiveWeatherForCityCode(cityCode:String):LiveWeatherLoader {
-			return _loadLiveWeather(LocationType.CITY_CODE, cityCode);
-		}
-		public function loadLiveWeatherForGeolocation(geolocation:LatLng):LiveWeatherLoader {
-			return _loadLiveWeather(LocationType.GEOLOCATION, geolocation);
-		}
 		public function loadLiveWeather(location:*):LiveWeatherLoader {
-			if (!(location is Location) && !(location is LatLng)) {
+			if (!location || (!(location is Location) && !(location is LatLng))) {
 				throw new ArgumentError('location parameter has to be of Location or LatLng type!');
 			}
 			
-			if (location is LatLng) return loadLiveWeatherForGeolocation(location as LatLng);
+			if (location is LatLng) return _loadLiveWeather(LocationType.LAT_LNG, location as LatLng);
 			
 			var l:Location=location as Location;
+			if (!l.zipCode && !l.cityCode) {
+				throw new ArgumentError('When location parameter is a Location, it has to have either a zipCode or a cityCode!');
+			}
 			
-			if (l.cityType==CityType.INSIDE_US) return loadLiveWeatherForZipCode(l.zipCode);
-			return loadLiveWeatherForCityCode(l.cityCode);
+			return _loadLiveWeather(LocationType.LOCATION, location as Location);
 		}
 		
 		/**
@@ -151,26 +143,19 @@ package net.tw.web.weatherBug {
 			cleanForecastLoader();
 			forecastLoaded.dispatch(forecast);
 		}
-		public function loadForecastForZipCode(zipCode:String):ForecastLoader {
-			return _loadForecast(LocationType.ZIP_CODE, zipCode);
-		}
-		public function loadForecastForCityCode(cityCode:String):ForecastLoader {
-			return _loadForecast(LocationType.CITY_CODE, cityCode);
-		}
-		public function loadForecastForGeolocation(geolocation:LatLng):ForecastLoader {
-			return _loadForecast(LocationType.GEOLOCATION, geolocation);
-		}
 		public function loadForecast(location:*):ForecastLoader {
 			if (!(location is Location) && !(location is LatLng)) {
 				throw new ArgumentError('location parameter has to be of Location or LatLng type!');
 			}
 			
-			if (location is LatLng) return loadForecastForGeolocation(location as LatLng);
+			if (location is LatLng) return _loadForecast(LocationType.LAT_LNG, location as LatLng);
 			
 			var l:Location=location as Location;
+			if (!l.zipCode && !l.cityCode) {
+				throw new ArgumentError('When location parameter is a Location, it has to have either a zipCode or a cityCode!');
+			}
 			
-			if (l.cityType==CityType.INSIDE_US) return loadForecastForZipCode(l.zipCode);
-			return loadForecastForCityCode(l.cityCode);
+			return _loadForecast(LocationType.LOCATION, location as Location);
 		}
 	}
 }

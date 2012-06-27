@@ -5,9 +5,7 @@ package net.tw.web.weatherBug.loaders {
 	import net.tw.web.weatherBug.signals.ForecastLoaded;
 	import net.tw.web.weatherBug.vo.Forecast;
 	import net.tw.web.weatherBug.vo.ForecastDay;
-	import net.tw.web.weatherBug.vo.LatLng;
 	import net.tw.web.weatherBug.vo.Location;
-	import net.tw.web.weatherBug.vo.LocationType;
 	import net.tw.web.weatherBug.vo.WeatherBugServiceSettings;
 
 	public class ForecastLoader extends WeatherBugLoader {
